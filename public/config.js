@@ -25,7 +25,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_TWITTER_URL": "https://x.com/whiteliquid88",
   "VITE_SEO_SITE_NAME": "Whiteliquid",
   "VITE_SEO_SITE_DESCRIPTION": "Whitest Liquid perp exchange",
-  "VITE_SEO_SITE_URL": "https://dex.orderly.network/whiteliquid-8804/",
+  "VITE_SEO_SITE_URL": "https://whiteliquid.xyz",
   "VITE_SEO_SITE_LANGUAGE": "en",
   "VITE_SEO_SITE_LOCALE": "en_US",
   "VITE_SEO_TWITTER_HANDLE": "@whiteliquid88",

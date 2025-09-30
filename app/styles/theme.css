@@ -3,27 +3,27 @@
   --oui-font-size-base: 16px;
 
   /* colors */
-  --oui-color-primary: 0 128 0; /* dark green */
-  --oui-color-primary-light: 102 205 170; /* medium aquamarine, lighter green */
-  --oui-color-primary-darken: 0 100 0; /* darker green */
-  --oui-color-primary-contrast: 0 0 0;  /* black text on green */
+  --oui-color-primary: 0 0 0; /* black (neutral primary) */
+  --oui-color-primary-light: 119 119 119; /* medium grey */
+  --oui-color-primary-darken: 34 34 34; /* darker grey */
+  --oui-color-primary-contrast: 255 255 255; /* white text on dark */
 
-  --oui-color-link: 0 128 0;  /* green link */
-  --oui-color-link-light: 60 179 113; 
+  --oui-color-link: 0 0 0;  /* black link */
+  --oui-color-link-light: 85 85 85; /* dark grey */
 
-  --oui-color-secondary: 0 128 0;  /* green secondary */
-  --oui-color-tertiary: 0 100 0;
-  --oui-color-quaternary: 144 238 144; /* light green */
+  --oui-color-secondary: 68 68 68;  /* neutral dark grey */
+  --oui-color-tertiary: 119 119 119; /* lighter grey */
+  --oui-color-quaternary: 187 187 187; /* light grey */
 
-  --oui-color-danger: 255 0 0;
+  --oui-color-danger: 255 0 0; /* SELL red */
   --oui-color-danger-light: 255 102 102;
   --oui-color-danger-darken: 204 0 0;
-  --oui-color-danger-contrast: 255 255 255;
+  --oui-color-danger-contrast: 255 255 255; /* white text on red */
 
-  --oui-color-success: 0 128 0; /* ensure this matches green */
+  --oui-color-success: 0 128 0; /* BUY green */
   --oui-color-success-light: 102 205 170;
   --oui-color-success-darken: 0 100 0;
-  --oui-color-success-contrast: 255 255 255;
+  --oui-color-success-contrast: 255 255 255; /* white text on green */
 
   --oui-color-warning: 255 209 70;
   --oui-color-warning-light: 255 229 133;
@@ -31,16 +31,16 @@
   --oui-color-warning-contrast: 0 0 0;
 
   --oui-color-fill: 255 255 255; /* white background */
-  --oui-color-fill-active: 245 245 245; /* light grey for active states */
+  --oui-color-fill-active: 245 245 245; /* light grey panels */
 
   /* base colors */
   --oui-color-base-1: 0 0 0;      /* black darkest */
   --oui-color-base-2: 34 34 34;
-  --oui-color-base-3: 51 51 51;
-  --oui-color-base-4: 85 85 85;
-  --oui-color-base-5: 119 119 119;
-  --oui-color-base-6: 153 153 153;
-  --oui-color-base-7: 187 187 187;
+  --oui-color-base-3: 68 68 68;
+  --oui-color-base-4: 102 102 102;
+  --oui-color-base-5: 136 136 136;
+  --oui-color-base-6: 170 170 170;
+  --oui-color-base-7: 204 204 204;
   --oui-color-base-8: 221 221 221;
   --oui-color-base-9: 238 238 238;
   --oui-color-base-10: 255 255 255; /* white */
@@ -49,24 +49,25 @@
   --oui-color-line: 200 200 200; /* subtle light grey lines */
 
   /* trading colors */
-  --oui-color-trading-loss: 255 0 0;
+  --oui-color-trading-loss: 255 0 0; /* red for loss / sell */
   --oui-color-trading-loss-contrast: 255 255 255;
-  --oui-color-trading-profit: 0 128 0;
+  --oui-color-trading-profit: 0 128 0; /* green for profit / buy */
   --oui-color-trading-profit-contrast: 255 255 255;
 
   /* gradients */
-  --oui-gradient-primary-start: 0 128 0; 
-  --oui-gradient-primary-end: 102 205 170;
+  --oui-gradient-primary-start: 255 255 255; 
+  --oui-gradient-primary-end: 238 238 238;
 
-  --oui-gradient-secondary-start: 34 139 34; 
-  --oui-gradient-secondary-end: 0 128 0;
+  --oui-gradient-secondary-start: 245 245 245; 
+  --oui-gradient-secondary-end: 221 221 221;
 
   --oui-gradient-success-start: 0 128 0;
-  --oui-gradient-success-end: 102 205 170;
+  --oui-gradient-success-end: 0 100 0;
 
-  /* ... keep other gradients as needed */
+  --oui-gradient-danger-start: 255 0 0;
+  --oui-gradient-danger-end: 204 0 0;
 
-  /* rounded and spacing remains the same */
+  /* rounded corners */
   --oui-rounded-sm: 2px;
   --oui-rounded: 4px;
   --oui-rounded-md: 6px;
@@ -75,6 +76,7 @@
   --oui-rounded-2xl: 16px;
   --oui-rounded-full: 9999px;
 
+  /* spacing */
   --oui-spacing-xs: 20rem;
   --oui-spacing-sm: 22.5rem;
   --oui-spacing-md: 26.25rem;
