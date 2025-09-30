@@ -3,27 +3,27 @@
   --oui-font-size-base: 16px;
 
   /* colors */
-  --oui-color-primary: 0 0 0; /* black (neutral primary) */
-  --oui-color-primary-light: 119 119 119; /* medium grey */
-  --oui-color-primary-darken: 34 34 34; /* darker grey */
-  --oui-color-primary-contrast: 255 255 255; /* white text on dark */
+  --oui-color-primary: 0 0 0; /* black as main text */
+  --oui-color-primary-light: 119 119 119; /* grey */
+  --oui-color-primary-darken: 34 34 34; 
+  --oui-color-primary-contrast: 255 255 255; /* white text if needed */
 
   --oui-color-link: 0 0 0;  /* black link */
-  --oui-color-link-light: 85 85 85; /* dark grey */
+  --oui-color-link-light: 85 85 85; /* dark grey link */
 
-  --oui-color-secondary: 68 68 68;  /* neutral dark grey */
-  --oui-color-tertiary: 119 119 119; /* lighter grey */
-  --oui-color-quaternary: 187 187 187; /* light grey */
+  --oui-color-secondary: 85 85 85;   /* neutral grey */
+  --oui-color-tertiary: 187 187 187; /* lighter grey */
+  --oui-color-quaternary: 238 238 238; /* very light grey */
 
   --oui-color-danger: 255 0 0; /* SELL red */
   --oui-color-danger-light: 255 102 102;
   --oui-color-danger-darken: 204 0 0;
-  --oui-color-danger-contrast: 255 255 255; /* white text on red */
+  --oui-color-danger-contrast: 255 255 255;
 
   --oui-color-success: 0 128 0; /* BUY green */
   --oui-color-success-light: 102 205 170;
   --oui-color-success-darken: 0 100 0;
-  --oui-color-success-contrast: 255 255 255; /* white text on green */
+  --oui-color-success-contrast: 255 255 255;
 
   --oui-color-warning: 255 209 70;
   --oui-color-warning-light: 255 229 133;
@@ -31,11 +31,11 @@
   --oui-color-warning-contrast: 0 0 0;
 
   --oui-color-fill: 255 255 255; /* white background */
-  --oui-color-fill-active: 245 245 245; /* light grey panels */
+  --oui-color-fill-active: 245 245 245; /* grey panels */
 
   /* base colors */
-  --oui-color-base-1: 0 0 0;      /* black darkest */
-  --oui-color-base-2: 34 34 34;
+  --oui-color-base-1: 0 0 0;      /* black */
+  --oui-color-base-2: 34 34 34;   /* dark grey */
   --oui-color-base-3: 68 68 68;
   --oui-color-base-4: 102 102 102;
   --oui-color-base-5: 136 136 136;
@@ -45,13 +45,13 @@
   --oui-color-base-9: 238 238 238;
   --oui-color-base-10: 255 255 255; /* white */
 
-  --oui-color-base-foreground: 0 0 0; /* black text */
-  --oui-color-line: 200 200 200; /* subtle light grey lines */
+  --oui-color-base-foreground: 0 0 0; /* black text everywhere */
+  --oui-color-line: 200 200 200; /* light grey separators */
 
   /* trading colors */
-  --oui-color-trading-loss: 255 0 0; /* red for loss / sell */
+  --oui-color-trading-loss: 255 0 0; /* red SELL */
   --oui-color-trading-loss-contrast: 255 255 255;
-  --oui-color-trading-profit: 0 128 0; /* green for profit / buy */
+  --oui-color-trading-profit: 0 128 0; /* green BUY */
   --oui-color-trading-profit-contrast: 255 255 255;
 
   /* gradients */
@@ -85,8 +85,33 @@
 }
 
 html, body {
-  background-color: rgb(var(--oui-color-fill));
-  color: rgb(var(--oui-color-base-foreground));
+  background-color: rgb(var(--oui-color-fill)); /* white background */
+  color: rgb(var(--oui-color-base-foreground)); /* black text */
   font-family: var(--oui-font-family) !important;
   font-size: var(--oui-font-size-base) !important;
+}
+
+/* Panels */
+.panel, .card, .box {
+  background-color: rgb(var(--oui-color-fill-active)); /* grey panels */
+  color: rgb(var(--oui-color-base-foreground));        /* black text */
+  border: 1px solid rgb(var(--oui-color-line));
+  border-radius: var(--oui-rounded-md);
+}
+
+/* Buttons */
+.button-buy {
+  background-color: rgb(var(--oui-color-success));
+  color: rgb(var(--oui-color-success-contrast));
+}
+.button-buy:hover {
+  background-color: rgb(var(--oui-color-success-darken));
+}
+
+.button-sell {
+  background-color: rgb(var(--oui-color-danger));
+  color: rgb(var(--oui-color-danger-contrast));
+}
+.button-sell:hover {
+  background-color: rgb(var(--oui-color-danger-darken));
 }
